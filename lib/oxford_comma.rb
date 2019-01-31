@@ -8,8 +8,9 @@ def oxford_comma(array)
     array.insert(2, 'and')
     return array.to_s
   else 
-    array[-1] = "and #{array-1}"
+    new = "and #{array-1}"
     array.pop
-    array.push()
+    array.push(new)
+    return array.join()
   end
 end
